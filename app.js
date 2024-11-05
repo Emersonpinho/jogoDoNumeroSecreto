@@ -12,7 +12,7 @@ let chute = prompt('Escolha um numero entre 1 e 30');
 
 // Condição que verifica se o usuario acertou ou não, mas não escreve na tela e sim no console.
 if (chute == numeroSecreto) {
-    alert('Isso ai! você descobriu o numero secreto (5)');
+    alert(`Isso ai! você descobriu o numero secreto ${numeroSecreto}`);
 } else {
     alert('Você errou :(')
 }
