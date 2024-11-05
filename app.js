@@ -24,3 +24,4 @@ while (chute != numeroSecreto) {
     // tentativas = tantativas + 1;
     tentativas ++;
 }}
+//
