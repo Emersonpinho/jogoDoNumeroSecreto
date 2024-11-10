@@ -14,7 +14,8 @@ while (chute != numeroSecreto) {
     chute = prompt('Escolha um numero entre 1 e 100');
     // Condição que verifica se o usuario acertou ou não, mas não escreve na tela e sim no console.
     if (chute == numeroSecreto) {
-        alert(`Isso ai! você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tantativas`);
+        break;
+        
     } else {
         if(chute > numeroSecreto){
             alert(`O numero secreto é MENOR que ${chute}`);
@@ -24,4 +25,9 @@ while (chute != numeroSecreto) {
     // tentativas = tantativas + 1;
     tentativas ++;
 }}
-//
+
+if(tentativas > 1) {
+    alert(`Isso ai! você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tantativas`);
+} else {
+    alert(`Isso ai! você descobriu o numero secreto ${numeroSecreto} com ${tentativas} tantativa`);
+}
